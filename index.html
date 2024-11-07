@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class Car{
+            constructor(name, model){
+                this.name= name;
+                this.model= model;
+            }
+        }
+        class Bike extends Car{
+            constructor(name, model,color){
+                super(name,model);
+                this.color=color;
+            }
+        }
+        // var p=new Bike("Aminul","New Model","red");
+        // document.write(p.name+" "+p.model+" "+p.color);
+        class cycle extends Bike{
+            constructor(name, model, color, number){
+                super(name, model, color);
+                this.number= number;
+            }
+            
+        }
+        var p=new cycle("aminul", "notun", "red", "01");
+        document.write(p.name+" "+p.model+" "+p.color+" "+p.number);
+    </script>
+</body>
+</html>
